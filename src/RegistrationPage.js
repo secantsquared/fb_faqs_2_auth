@@ -13,7 +13,7 @@ const buttonDimensions = {
   padding: '0 0 0 18%'
 }
 
-const LoginPage = props => {
+const RegistrationPage = props => {
   return (
     <div
       style={{
@@ -59,4 +59,4 @@ const LoginPage = props => {
   )
 }
 
-export default withRouter(LoginPage)
+export default withRouter(RegistrationPage)
