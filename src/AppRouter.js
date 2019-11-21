@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Dashboard from './Dashboard'
 import Unauth from './Unauth'
 import PrivateRoute from './PrivateRoute'
-import LoginPage from './LoginPage'
+import RegistrationPage from './RegistrationPage'
 import firebase from './fbAuthUtils'
 
 const AppRouter = () => {
@@ -11,7 +11,7 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={LoginPage} />
+        <Route exact path="/" component={RegistrationPage} />
         <PrivateRoute path="/dashboard" component={Dashboard} />
         <Route component={Unauth} />
       </Switch>
